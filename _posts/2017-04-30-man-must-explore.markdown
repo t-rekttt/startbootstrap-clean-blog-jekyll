@@ -1,12 +1,12 @@
 ---
-layout: post
 title: Writeup WhiteHat Challenge 03
+date: 2017-04-30 00:00:00 Z
+layout: post
 subtitle: Problems look mighty small from 150 miles up
-date: 2017-04-30T00:00:00.000Z
 author: Start Bootstrap
 header-img: img/post-bg-06.jpg
-published: true
 ---
+
 <p><p>Đây là lần đầu tiên mình tham gia vào WhiteHat challenge, và chơi hẳn luôn một mình một team :v. Vì phải đi học sáng nên mình không thể tham gia khi cuộc thi bắt đầu vào lúc 9h sáng, nhưng những trải nghiệm mà cuộc thi đem lại cho mình phải nói là cực kì thú vị và phấn khích :D. Cũng không rõ nhờ năng lực nào mà mình có thể giải được 7/10 flags, thời điểm cao nhất có lúc nằm trong top 10 xếp hạng rồi :v, mà tiếc là thời gian khá ngắn ngủi, mình cũng không solve được thêm nữa nên đành chịu tụt xuống #20.</p><p>Đây là team mình, EHS là viết tắt tên trường mình :3.</p><figure data-orig-width="1365" data-orig-height="661" class="tmblr-full"><img src="https://68.media.tumblr.com/f39298556b0ed50f96e1f907eb84de87/tumblr_inline_op2nlx0byN1ux1xli_540.png" data-orig-width="1365" data-orig-height="661" alt="image"></figure>[[MORE]]<p><b>
 
 Web001</b></p><blockquote><p>Sign in and get the flag in the following site.</p><p>URL: <a href="http://web001-chal03.wargame.whitehat.vn/">http://web001-chal03.wargame.whitehat.vn</a></p><p>Submit WhiteHat{sha1(flag)}</p></blockquote><p>Mở url, ta được một form đăng nhập</p><figure data-orig-width="1366" data-orig-height="768" class="tmblr-full"><img src="https://68.media.tumblr.com/a04353baf4b72dee88972b6f8d365965/tumblr_inline_op2n1nevfP1ux1xli_540.png" data-orig-width="1366" data-orig-height="768" alt="image"></figure><p>Xem source trang, lấy được username/password: test/test</p><figure data-orig-width="1366" data-orig-height="768" class="tmblr-full"><img src="https://68.media.tumblr.com/a405ae48128dd0e6b66d56acabc73416/tumblr_inline_op2ncywClE1ux1xli_540.png" data-orig-width="1366" data-orig-height="768" alt="image"></figure><p>Đăng nhập thử, trang web báo không có quyền admin</p><figure data-orig-width="1366" data-orig-height="768" class="tmblr-full"><img src="https://68.media.tumblr.com/fef15284ba72f4f6a5506601718219b6/tumblr_inline_op2nda8Khh1ux1xli_540.png" data-orig-width="1366" data-orig-height="768" alt="image"></figure><p>Xem thử cookie, thấy có giá trị "user=test", thử đổi lại thành "user=admin" xem có hổng session không</p><figure data-orig-width="1080" data-orig-height="607" class="tmblr-full"><img src="https://68.media.tumblr.com/b6b71e6b50961d8c0baffaf510c4ea87/tumblr_inline_op2ndoCrNS1ux1xli_540.png" data-orig-width="1080" data-orig-height="607" alt="image"></figure><p>Flag :3</p><figure data-orig-width="1366" data-orig-height="768" class="tmblr-full"><img src="https://68.media.tumblr.com/68d3d9730d9077d62cf070e162652cb4/tumblr_inline_op2ne3OY5y1ux1xli_540.png" data-orig-width="1366" data-orig-height="768" alt="image"></figure><p>Flag: <b>WhiteHat{sha1(don't_believe_cookies_at_all)}</b></p><hr><p><b>
