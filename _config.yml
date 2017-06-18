@@ -1,6 +1,6 @@
 ---
-title: Clean Blog
-timezone: UTC
+title: T-Rekt's Blog
+timezone: Asia/Bangkok
 collections:
   posts:
     title: Posts
@@ -9,16 +9,14 @@ collections:
     title: Uploads
     output: true
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
+email: vietthao2000@facebook.com
 copyright_name: Your/Project/Corporate Name
-description: Write your site description here. It will be used as your sites meta
-  description as well!
-baseurl: ''
-url: http://yourdomain.com
-twitter_username: SBootstrap
-github_username: davidtmiller
-facebook_username: StartBootstrap
-email_username: your-email@yourdomain.com
+description: Security & IT Tutorial
+baseurl: 
+url: https://t-rekttt.github.io/
+github_username: t-rekttt
+facebook_username: vietthao2000
+email_username: vietthao2000@facebook.com
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
